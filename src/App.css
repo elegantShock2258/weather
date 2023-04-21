@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.parent {
+  margin: 0px;
+  padding:0px;
+
+  backdrop-filter: blur(200px);
+  border: 2px solid #00000080;
+  background:#00000015;
+  border-radius:20px;
+}
+
+.parent {
+  margin: 0px;
+  padding:0px;
+
+}
+
+.weatherView {
+  padding: 0px;
+  margin: 0px;
+  width: 40vw;
+  height: 35vh;
+
+  border-radius: 20px;
+  padding: 20px;
+  color: #F4EDED;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.weatherViewToolbar {
+  font-family: 'Oswald';
+  font-size: 1.4rem;
+
+  padding: 10px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  position: relative;
+  border: 3px solid #00000080;
+  /* top:0; */
+  height: 7vh;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  flex-direction: row;
+}
+
+.windspeed {
+  font-family: 'Roboto Condensed';
+  margin: 0;
+}
+
+.content {
+
+  height: 100%;
+  display: flex;
+}
+
+.temps {
+  align-self: center;
+  font-family: gunsan;
+  font-size: 14rem;
+  border-right: 3px solid #3f4045;
+  padding-right: 20px;
+
+}
+
+.temps>sup {
+  font-family: 'Roboto Condensed';
+  font-size: 6rem;
+}
+
+.feelTempParent {
+  font-family: 'Oswald';
+  align-self: flex-start;
+  font-size: 2rem;
+  margin-left: 5%;
+
+  display: flex;
+  flex-direction: column;
+  /* gap:3vw; */
+}
+
+.feelTemp {
+  font-family: 'Abel';
+  align-self: flex-end;
+  font-size: 6rem;
+
+}
+
+.feelTempText {
+  margin-top: 20%;
+  border-bottom: 2px dashed #3f4045;
+}
+
+.feelTemp>sup {
+  font-family: 'Roboto Condensed';
+  font-size: 2.5rem;
+}
+
+.WeatherParam {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
+
+.precipitationHours {
+  margin-left: 4%;
+
+  margin-top: 0.5%;
+  padding: 0 1%;
+  padding-bottom: 0%;
+  width: 50%;
+  align-self: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color:rgba(12, 12, 90, 0.253);
+  color: #92b6e2;
+  border-radius: 10%;
+}
+
+.precipitationHourTitle {
+  text-align: center;
+  font-family: 'Oswald';
+  font-size: 2rem;
+
+  box-sizing: content-box;
+  padding: 6%;
+
+  border-bottom: 3px solid #5688C7;
+}
+
+.precipitationHourPercent {
+  box-sizing: content-box;
+  width: 100%;
+  list-style: none;
+}
+
+.precipitationHourPercent>li {
+  box-sizing: content-box;
+  text-align: left;
+  margin-bottom: 3px;
+  padding: 2%;
+  border-radius: 3px;
+
+
+  width: 100%;
+  font-size: 1.4rem;
+  font-family: 'Roboto Condensed';
+
+}
+
+.cityName {
+  font-size: 2rem;
+  padding: 0px 10px;
+  border-radius: 7px;
+  font-family: 'Anton';
+  background-color:rgba(43, 48, 53, 0.466);
+  align-self: center;
+
+}
+
+.time {
+  margin-right: 30px;
+  padding-right: 10px;
+}
+
