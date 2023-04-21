@@ -20,7 +20,7 @@ let lat = -3.0, long = -3.0, jsonData
 
 let options = {
   enableHighAccuracy: false,
-  timeout: 9000,
+  timeout: 10000,
   maximumAge: 0
 }
 
