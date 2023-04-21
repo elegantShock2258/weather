@@ -191,7 +191,7 @@ getJSON(req, function (err, e) {
   if (err != null) {
     console.error(err);
   } else {
-    skySetup(Math.abs(e.elevation), new Date().getHours() - 12 > 10 || new Date().getHours() < 6)
+    skySetup(Math.abs(e.elevation), new Date().getHours() - 12 > 8 || new Date().getHours() < 6)
     console.log("eleveation", e)
   }
 });
