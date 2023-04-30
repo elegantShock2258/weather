@@ -46,8 +46,8 @@ class WeatherView extends React.Component {
           <div className="precipitationHours">
             <div className="precipitationHourTitle">Hourly</div>
             <ul className="precipitationHourPercent">
-              <li> <FontAwesomeIcon icon={faCloudRain} />  <span className="time">{(this.hours - 2) % 24}:00</span>{this.state.data.hourly.precipitation[(this.hours - 2) % 24]}</li>
-              <li> <FontAwesomeIcon icon={faCloudRain} />  <span className="time">{(this.hours - 1) % 24}:00</span>{this.state.data.hourly.precipitation[(this.hours - 1) % 24]}</li>
+              <li> <FontAwesomeIcon icon={faCloudRain} />  <span className="time">{(this.hours - 2 +24) % 24}:00</span>{this.state.data.hourly.precipitation[(this.hours - 2) % 24]}</li>
+              <li> <FontAwesomeIcon icon={faCloudRain} />  <span className="time">{(this.hours - 1 + 24)%24}:00</span>{this.state.data.hourly.precipitation[(this.hours - 1) % 24]}</li>
               <li> <FontAwesomeIcon icon={faCloudRain} />  <span className="time">{this.hours}:00</span>{this.state.data.hourly.precipitation[this.hours % 24]}</li>
               <li> <FontAwesomeIcon icon={faCloudRain} />  <span className="time">{(this.hours + 1) % 24}:00</span>{this.state.data.hourly.precipitation[(this.hours + 1) % 24]}</li>
               <li> <FontAwesomeIcon icon={faCloudRain} />  <span className="time">{(this.hours + 2) % 24}:00</span>{this.state.data.hourly.precipitation[(this.hours + 2) % 24]}</li>
@@ -191,7 +191,8 @@ getJSON(req, function (err, e) {
   if (err != null) {
     console.error(err);
   } else {
-    skySetup(Math.abs(e.elevation), new Date().getHours() - 12 > 8 || new Date().getHours() < 6)
+    // skySetup(Math.abs(e.elevation), new Date().getHours() >= 20 || new Date().getHours() < 6)
+    skySetup(Math.abs(e.elevation), new Date().getHours() >= 20 || new Date().getHours() < 6)
     console.log("eleveation", e)
   }
 });

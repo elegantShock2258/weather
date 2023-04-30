@@ -7,7 +7,7 @@
   margin: 0px;
   padding:0px;
 
-  backdrop-filter: blur(200px);
+  backdrop-filter: blur(2000px);
   border: 2px solid #00000080;
   background:#00000015;
   border-radius:20px;
